@@ -1,12 +1,14 @@
 import Head from 'next/head'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import { HiDocumentDownload } from 'react-icons/hi'
 import Image from 'next/image'
 import adamphoto from 'public/adam-photo.png'
 import teeBagLogin from 'public/tee-bag-login.png'
 import grassWorksLogin from 'public/grass-works-login.png'
 import resumeOne from 'public/resume-portfolio-one.jpg'
 import resumeTwo from 'public/resume-portfolio-two.jpg'
+
 import { useState } from 'react'
 
 export default function Home() {
@@ -35,7 +37,7 @@ export default function Home() {
                     LinkedIn
                   </a>
                 </li>
-                
+
               </ul>
 
             </nav>
@@ -45,11 +47,12 @@ export default function Home() {
               <p className='text-slate-500 dark:text-slate-400 text-xl py-2'>A software developer with a diverse background in both consumer sales and technology. After spending 5 years in sales, I made the transition to software development, driven by my passion and fascination for technology. I am committed to continuously improving my technical skills and staying current with the latest industry trends and technologies to provide the best possible service to my clients</p>
             </div>
             <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 '>
-              <a className=''
+              <a className='hover:scale-150 transition duration-500 ease-in-out'
                 href='https://www.linkedin.com/in/adamchance/'>
                 <AiFillLinkedin />
               </a>
-              <a href='https://github.com/AChan118'>
+              <a className='hover:scale-150 transition duration-500 ease-in-out'
+                href='https://github.com/AChan118'>
                 <AiFillGithub />
               </a>
             </div>
@@ -60,13 +63,13 @@ export default function Home() {
           {/* Second Page */}
           <section className='py-10'>
             <div >
-              <h3 className="text-3xl py-1 font-medium dark:text-white ">Projects</h3>
+              <h3 className="text-3xl py-1 font-medium text-sky-600 dark:text-white ">Projects</h3>
             </div>
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-              <div className="text-2xl text-center basis-1/3 flex-1 flex flex-col gap-2 text-teal-600 dark:text-sky-400"> Teebag
+              <div className="text-2xl text-center basis-1/3 flex-1 flex flex-col gap-2 text-black dark:text-sky-400 hover:scale-125 transition duration-500 ease-in-out"> Teebag
                 <a href='https://github.com/AChan118/TeeBag-Client'>
                   <Image
-                    className="rounded-lg object-cover"
+                    className="rounded-lg object-cover "
                     width={"100%"}
                     height={"100%"}
                     layout="responsive"
@@ -75,7 +78,7 @@ export default function Home() {
                   />
                 </a>
               </div>
-              <div className="text-2xl text-center basis-1/3 flex-1 flex flex-col gap-2 text-teal-600 dark:text-sky-400"> GrassWorks
+              <div className="text-2xl text-center basis-1/3 flex-1 flex flex-col gap-2 text-black dark:text-sky-400 hover:scale-125 transition duration-500 ease-in-out"> GrassWorks
                 <a href='https://github.com/AChan118/Grass-Works'>
                   <Image
                     className="rounded-lg object-cover"
@@ -89,13 +92,20 @@ export default function Home() {
               </div>
             </div>
 
-            <div className='py-10' >
-              <h3 className="text-3xl py-1 font-semibold dark:text-white ">Resume</h3>
+            <div className='flex flex-row gap-2 items-center py-10' >
+              <h3 className="text-3xl py-1 font-semibold text-sky-600 dark:text-white ">Resume</h3>
+              <a
+                className="text-2xl text-sky-400"
+                href="/adam-chance-resume.pdf"
+                alt="alt text"
+                target="_blank"
+                rel="noopener noreferrer"
+              ><HiDocumentDownload/></a>
             </div>
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
               <div className="basis-1/3 flex-1 ">
                 <Image
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover "
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
@@ -104,7 +114,7 @@ export default function Home() {
               </div>
               <div className="basis-1/3 flex-1">
                 <Image
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover "
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
