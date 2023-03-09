@@ -67,7 +67,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
               <div className="text-2xl text-center basis-1/3 flex-1 flex flex-col gap-2 text-black dark:text-sky-400 hover:scale-125 transition duration-500 ease-in-out"> Teebag
-                <a href='https://github.com/AChan118/TeeBag-Client'>
+                <a href='https://adamchance.me'>
                   <Image
                     className="rounded-lg object-cover "
                     width={"100%"}
